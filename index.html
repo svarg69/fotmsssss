@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="mail.php" method="post">
+        <!-- метод пост отправляет гет принимает. чаще всего внутри формы 
+            используется инпут-->
+        <input required type="text" name="name">
+        <input name="email" type="email" placeholder="почта"> 
+        <!-- в емайле будет валидация на собаку а так это как и текст -->
+        <input type="password">
+        <!-- отличие лишь что при вводе точки вместо символов -->
+        <input type="button" value="текст кнопки">
+        <!-- у кнопки серый фон бордер и оутлайн, рекомендуется сразу обнулять -->
+        <input type="submit">
+        <!-- отвечает за отправку, при нажатии можно заметить обновление странички -->
+        <input type="checkbox">
+        <!-- для флажка -->
+        <input type="radio" name="radio">
+        <input type="radio" name="radio">
+        <!-- в отличие от чекбокса кликается единожды, как флажок не снимается, 
+            используется в группе с другими где можно выбрать один из, для группировании 
+            применяется атрибут нэйм-->
+        <input type="reset" value="очистить форму">
+        <!-- стирает то что было написано в инпутах -->
+        <input type="hidden">
+        <!-- не виден. нужны бэкендерам?
+        тоесть польозователь выбрал тариф или что то, в форме указал имя почту и отправил
+        а с этим еще благодаря хиддену пердалось и инфа про то что он за тариф выбрал -->
+        <input type="file" multiple accept=".jpeg .txt">
+        <!-- малтипл атрибут - загрузка нескольких файлов, есть у этого инпута
+        драг энд дроп - перетащить файл/, как раз лучше работать со стандартным
+        тайпфайлом так как js запрещает перетаскивать файлы-->
+        <input type="range">
+        <!-- минус - нельзя стилизовать -->
+        <input type="date">
+        <!-- опять же не слизизуется -->
+        
+
+        <textarea placeholder="что вводить"></textarea>
+        <!-- при растяжении двигает блоки, убирается в сиэсэс ресайз нон 
+        внутри тэга ничего не пишется, он закрытый вероятно чтобы в нем написать
+        ваш браузер не поддерживает текстарею")))-->
+        <select>
+            <optgroup label="группа1">
+
+            </optgroup>
+            <option selected value="настройка1">название опции3</option>
+            <option value="настройка1">название опции1</option>
+            <option value="настройка1">название опции1</option>
+            <option disabled value="настройка1">название опции1</option>
+
+        </select>
+
+        <!-- стилизуется через js библиотеки 
+        jquery найс селект-->
+
+        <button type="button">
+            <!-- если явно кнопке предлагает перейти на 
+                другую страницу - ставим ссылку -->
+        </button>
+        <!-- если кнопка в форме расположена она по умолчанию тайп сабмит
+        меняем на баттон не забываем -->
+        <br>
+        <label for="">
+            введите имя
+        </label>
+        <!-- благодаря лейблу лучше стилизовать плейсхолдер???? -->
+        <input id="name" type="text">
+
+
+        <label>
+            <input type="checkbox">
+            <span class="checkbox"> я согласен</span>
+        </label>
+        <!-- так как инпут в тэге лейбл то при нажатии на текст ставится флажок
+         -->
+
+        <input type="checkbox" id="check" checked>
+        <label for="check">cjukfct</label>
+        <!-- второй вариант с нажатием на текст 
+        чекед - по умолчанию ставит галочку сразу-->
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

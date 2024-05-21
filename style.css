@@ -1,0 +1,45 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+textarea{
+    resize: none;
+    resize: vertical;
+    /* вертикал - только вниз */
+}
+
+input[type='checkbox']{
+    display: none;
+}
+.checkbox{
+    position: relative;
+    padding-left: 30px;
+}
+.checkbox:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    top: 5px;
+    border: 1px solid red;
+}
+input[type='checkbox']:checked + .checkbox:before{
+   background-color: blue;
+}
+/* тоесть чтобы стилизовать ебаный кубик
+мы скрыли оригинальный чекбокс
+нарисовали в сиэсэс новый и разукрасили */
+
+input:valid{
+    border-color: chartreuse;
+}
+input:invalid{
+    border-color: brown;
+}
+input:focus{
+    box-shadow: 10px 10px 10px 10px violet;
+}
+
+input:focus:valid{
+    border: 10px solid green;
+}
